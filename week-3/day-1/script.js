@@ -5,49 +5,65 @@
 // ---------- Step 1: Variables ----------
 // Example:
 // Create 3 variables using "let" or "const"
-const exampleName = "Taco Rocket";   // string (text)
-const exampleYears = 3;              // number
-const exampleIsOpen = true;          // boolean (true or false)
+// const exampleName = "Taco Rocket";   // string (text)
+// const exampleYears = 3;              // number
+// const exampleIsOpen = true;          // boolean (true or false)
 
-// Log variables
-console.log(exampleName, exampleYears, exampleIsOpen);
-console.log(typeof exampleName);     // typeof tells you the type
+// // Log variables
+// console.log(exampleName, exampleYears, exampleIsOpen);
+// console.log(typeof exampleName);     // typeof tells you the type
 
 // TODO: Make 3 variables for YOUR truck: a name, a number, and a true/false.
 // TODO: console.log them, and log the typeof each one.
+const exampleName = "Treat Street Truck";
+const exampleYears = 2;
+const exampleIsOpen = true;
 
+console.log(exampleName, exampleYears, exampleIsOpen);
+console.log(typeof exampleName);
 
 // ---------- Step 2: An array (a list) ----------
 // Example:
-const exampleMenu = ["taco", "burrito", "nachos"];
-console.log(exampleMenu[0]);         // first item: index 0
-console.log(exampleMenu.length);     // how many items
+// const exampleMenu = ["taco", "burrito", "nachos"];
+// console.log(exampleMenu[0]);         // first item: index 0
+// console.log(exampleMenu.length);     // how many items
 
 // TODO: Make an array of 3 or more things YOUR truck sells.
 // TODO: Log the first item, the last item, and how many items there are.
-
+const exampleMenu = ["smash slider", "funnel cake", "deep-fried honeybun"];
+console.log(exampleMenu[0]);
+console.log(exampleMenu.length);
 
 // ---------- Step 3: An object (one thing with details) ----------
 // Example:
-const exampleItem = { name: "taco", price: 4.5, spicy: true };
-console.log(exampleItem.name);       // dot notation
-console.log(exampleItem["price"]);   // bracket notation
+// const exampleItem = { name: "taco", price: 4.5, spicy: true };
+// console.log(exampleItem.name);       // dot notation
+// console.log(exampleItem["price"]);   // bracket notation
 
 // TODO: Make an object for one of YOUR menu items (name, price, spicy).
 // TODO: Log one property with dot notation and one with bracket notation.
-
+const exampleItem = {name: "smash slider", price: 6.25, spicy: false };
+console.log(exampleItem.name);
+console.log(exampleItem["price"]);
 
 // ---------- Step 4: A function ----------
 // Example:
-function addTip(price, tip) {
-  return price + tip;
-}
-console.log(addTip(10, 2));          // 12
+// function addTip(price, tip) {
+//   return price + tip;
+// }
+// console.log(addTip(10, 2));          // 12
 
 // TODO: Write a function orderTotal(price, quantity) that RETURNS price * quantity.
 // TODO: Before you run it, guess what orderTotal(4.5, 3) gives. Then log it.
-
+function addTip(price, tip) {
+  return price + tip;
+}
+console.log(addTip(6.25, 2));
 
 // ---------- Extra practice (if you finish early) ----------
 // 1. Change your menu item's price AFTER you made the object, then log it again.
 // 2. Write isCheap(price): return "cheap!" if price is under 5, otherwise "fancy".
+function isCheap(price) {
+  return price < 5 ? "cheap!" : "fancy!";
+}
+console.log(isCheap(addTip));
