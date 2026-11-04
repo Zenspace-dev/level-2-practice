@@ -75,3 +75,10 @@ const myTruck = {
   }
 }
 console.log("Step 1:", myTruck.describe());
+
+const myJson = '{"Treat Street Truck": "funnel cake", "price": 5.5}';
+const myParsed = JSON.parse
+console.log("Step: 3", foodItem.price);
+  
+const backToString = JSON.stringify(myParsed);
+console.log("Step: 4", typeof "string");
