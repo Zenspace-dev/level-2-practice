@@ -68,4 +68,10 @@ function isCheap(price) {
 }
 console.log(isCheap(addTip));
 
-
+const myTruck = {
+  name: "Treat Street Truck",
+  describe: function() {
+    return "Welcome to " + this.name + "!";
+  }
+}
+console.log("Step 1:", myTruck.describe());
