@@ -15,12 +15,12 @@
 
 // TODO: Make 3 variables for YOUR truck: a name, a number, and a true/false.
 // TODO: console.log them, and log the typeof each one.
-const exampleName = "Treat Street Truck";
-const exampleYears = 2;
-const exampleIsOpen = true;
+const truckName = "Treat Street Truck";
+const myYears = 2;
+const isOpen = true;
 
-console.log(exampleName, exampleYears, exampleIsOpen);
-console.log(typeof exampleName);
+console.log(truckName, myYears, isOpen);
+console.log(typeof truckName, typeof myYears, typeof isOpen);
 
 // ---------- Step 2: An array (a list) ----------
 // Example:
@@ -30,9 +30,9 @@ console.log(typeof exampleName);
 
 // TODO: Make an array of 3 or more things YOUR truck sells.
 // TODO: Log the first item, the last item, and how many items there are.
-const exampleMenu = ["smash slider", "funnel cake", "deep-fried honeybun"];
-console.log(exampleMenu[0]);
-console.log(exampleMenu.length);
+const myMenu = ["smash slider", "funnel cake", "deep-fried honeybun"];
+console.log(myMenu[0]);
+console.log(myMenu.length);
 
 // ---------- Step 3: An object (one thing with details) ----------
 // Example:
@@ -42,9 +42,9 @@ console.log(exampleMenu.length);
 
 // TODO: Make an object for one of YOUR menu items (name, price, spicy).
 // TODO: Log one property with dot notation and one with bracket notation.
-const exampleItem = {name: "smash slider", price: 6.25, spicy: false };
-console.log(exampleItem.name);
-console.log(exampleItem["price"]);
+const foodItem = {name: "smash slider", price: 6.25, spicy: false };
+console.log(foodItem.name);
+console.log(foodItem["price"]);
 
 // ---------- Step 4: A function ----------
 // Example:
@@ -67,3 +67,5 @@ function isCheap(price) {
   return price < 5 ? "cheap!" : "fancy!";
 }
 console.log(isCheap(addTip));
+
+
