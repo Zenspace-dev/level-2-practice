@@ -24,7 +24,9 @@ for (let i = 0; i < menu.length; i++) {
 
 // YOUR TURN: log every item's PRICE.
 // Change one thing: .name → .price
-
+for (let i = 0; i < menu.length; i++) {
+  console.log(menu[i].price);
+}
 
 // ---------- Step 2: A sentence for each item ----------
 // EXAMPLE: logs "Taco is on the menu", "Burrito is on the menu"...
@@ -34,7 +36,9 @@ for (let i = 0; i < menu.length; i++) {
 
 // YOUR TURN: log "Taco costs $4.5", "Burrito costs $9"...
 // Change one thing: " is on the menu" → " costs $" + menu[i].price
-
+for (let i = 0 < menu.length; i++) {
+  console.log(menu[i].name + " costs $" + menu[i].price);
+}
 
 // ---------- Step 3: Put the menu on the page ----------
 // EXAMPLE: puts every NAME on the page, one per line. (Same as Menu Card.)
