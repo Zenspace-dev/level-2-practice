@@ -53,7 +53,8 @@ try {
   });
 } catch (error) {
   console.log(error);
-}
+  statusText.textContent = "Can't reach the Rick and Morty server. Check your internet and try again.";
+  }
 }
 
 searchButton.addEventListener("click", searchCharacters);
