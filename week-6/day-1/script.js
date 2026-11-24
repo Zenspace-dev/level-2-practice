@@ -47,7 +47,7 @@ try {
 
   // Step 1: #2 - Take the Searching... message away so it isn't there after you get your results
   statusText.textContent = "";
-  // SUCCESS: one list item per character
+  // SUCCESS: one list item per character and count
   statusText.textContent = `Found ${data.info.count} characters`;
 
   data.results.forEach(function (character) {
@@ -55,7 +55,7 @@ try {
     item.className = "list-group-item";
     item.textContent = `${character.name} (${character.species}, ${character.status})`;
     results.appendChild(item);
-
+  // Clear searchBox
   searchBox.value = "";
   });
 } catch (error) {
