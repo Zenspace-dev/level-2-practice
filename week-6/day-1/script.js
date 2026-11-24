@@ -18,8 +18,11 @@ async function searchCharacters() {
   // A template literal: backticks ` ` instead of quotes, and ${...} drops a value into the text.
 try {
   
- 
-  
+ if (searchBox.value.trim() === "") {
+  statusText.textContent = "Type a name first.";
+  results.textContent = "";
+  return;
+ }  
   const url = `https://rickandmortyapi.com/api/character/?name=${searchBox.value}`;
 
   // ---------- Step 1 goes here: clear old results + LOADING ----------
@@ -45,11 +48,15 @@ try {
   // Step 1: #2 - Take the Searching... message away so it isn't there after you get your results
   statusText.textContent = "";
   // SUCCESS: one list item per character
+  statusText.textContent = `Found ${data.info.count} characters`;
+
   data.results.forEach(function (character) {
     const item = document.createElement("li");
     item.className = "list-group-item";
     item.textContent = `${character.name} (${character.species}, ${character.status})`;
     results.appendChild(item);
+
+  searchBox.value = "";
   });
 } catch (error) {
   console.log(error);
